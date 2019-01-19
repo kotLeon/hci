@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Informacje wst\IeC {\k e}pne}{3}{section.0.1}
+\contentsline {section}{\numberline {2}Wykonane zadanie}{3}{section.0.2}
