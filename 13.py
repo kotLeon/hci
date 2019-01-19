@@ -26,7 +26,7 @@ plt.xlabel("t")
 plt.ylabel("A")
 plt.legend(loc = 'upper right')
 
-plt.show()
+#plt.show() # odkomentowac dla wyswietlenia wykresu
 
 
 # Wykres syg przefiltrowanegi i cyfr (odkomentowac w celu wyswietlenia)
@@ -52,3 +52,18 @@ plt.show()
 # plt.ylabel("znak")
 # plt.legend(loc = 'lower right')
 # plt.show()
+
+# petla odkodowujaca wybrane cyfry
+i = 0
+odp = []
+while i < p1.size:
+	if p1[i] > -0.8: # jesli sygnal wyzszy, niz -0.8, wtedy mrugniecie
+		odp.append(zmA[i])
+		#print(p1[i])
+		i += 100 # tyle średnio (mniej więcej) trwa jedno mrugnięcie
+		# więc pomijam te indeksy, poniewaz caly czas wybierana jest ta 
+		# sama cyfra
+	i += 1
+		
+		
+print(odp)
